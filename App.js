@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Button, View, Text, StyleSheet} from 'react-native';
 
 const App = () => {
-  const [outputText, setOutputText] = useState('Hello G! I like you!');
+  const [outputText, setOutputText] = useState('Hello G! Good night!');
 
   const ask = () => {
     setOutputText('Can I?');
@@ -12,7 +12,7 @@ const App = () => {
     <>
       <View style={styles.container}>
         <Text style={styles.text}>{outputText}</Text>
-        <Button title="Can I ask you something, G?" onPress={ask} />
+        <Button title="G, can I ask you something?" onPress={ask} />
       </View>
     </>
   );
